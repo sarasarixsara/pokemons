@@ -1,0 +1,20 @@
+<script setup>
+import MainLayout from "@/views/MainLayout.vue";
+import PokemonList from "@/components/PokemonList.vue";
+import {useFavoriteStore} from "@/stores/favorites.js";
+import BottomBar from "@/components/BottomBar.vue";
+
+const favoriteStore = useFavoriteStore ();
+
+
+</script>
+<template>
+  <MainLayout>
+    <PokemonList :pokemons = favoriteStore.favoritePokemons :isFavorite="(name) =>favoriteStore.isFavorite(name)" @select=""/>
+    <BottomBar/>
+  </MainLayout>
+</template>
+
+<style scoped>
+
+</style>
