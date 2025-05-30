@@ -1,35 +1,39 @@
-# pokemones
 
-This template should help get you started developing with Vue 3 in Vite.
+# Pokemons
 
-## Recommended IDE Setup
+Se realiza una única carga inicial de la lista de Pokemones con paginación controlada manualmente, concatenando los resultados. Los detalles individuales de cada Pokémon se cargan bajo demanda y se cachean en Pinia, previniendo llamadas redundantes.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+MainLayout.vue define el esqueleto general con componentes reusables como SearchBar, y un <slot> permite inyectar vistas como List.
 
-## Customize configuration
+Durante el desarrollo se priorizaron principios de diseño como KISS, DRY y SOLID para mantener la base de código limpia, modular y extensible. Se evitó sobreoptimizar al principio, pero se anticiparon posibles escenarios de escalado, como múltiples consultas simultáneas, rutas dinámicas y almacenamiento de favoritos.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Este enfoque permite no solo cumplir con los requisitos funcionales, sino también garantizar una experiencia fluida y robusta en escenarios reales con grandes volúmenes de datos.
 
-## Project Setup
+Las clases de estilo de los componentes se encuentran en main.css para poder aplicarlas de forma global.
+## Deployment
 
-```sh
-npm install
+To deploy this project run
+
+```bash
+  npm run deploy
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
 ```
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Tech Stack
 
-```sh
-npm run test:unit
-```
+**Client:** Vue, Vite
+**Storage:** Pinia
+
+Vue router, Tailwind CSS, Fetch API, localStorage
+

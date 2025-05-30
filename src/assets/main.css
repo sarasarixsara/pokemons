@@ -27,15 +27,19 @@
         /*@apply text-[1.2rem] font-medium*/
         @apply text-[18px] font-medium
     }
-.pokemon-image-container{
-    @apply bg-[url('/background.png')] md:h-48 h-44 w-full relative py-4 bg-cover bg-center;
-}
-    .pokemon-image{
+
+    .pokemon-image-container {
+        @apply bg-[url('/background.png')] md:h-48 h-44 w-full relative py-4 bg-cover bg-center;
+    }
+
+    .pokemon-image {
         @apply z-10 absolute top-2 right-2 bg-no-repeat;
     }
-    .pokemon-list-row{
+
+    .pokemon-list-row {
         @apply pl-2 font-semibold text-[1.2rem] text-pokeGray-400 cursor-pointer capitalize;
     }
+
     .bottom-bar {
         @apply bg-white w-screen bottom-0 absolute z-10 left-0 items-center shadow-2xl;
     }
@@ -59,19 +63,24 @@
     .pokemon-info-table-container {
         @apply flex flex-col flex-1 md:px-8 px-4 overflow-hidden;
     }
-.loader{
-    @apply h-screen flex items-center justify-center;
-}
-    .not-found{
+
+    .loader {
+        @apply h-screen flex items-center justify-center;
+    }
+
+    .not-found {
         @apply flex flex-col justify-between items-center h-1/2 space-y-4 mt-8;
     }
+
     .pokemones-list {
         @apply max-h-[80vh] overflow-y-auto space-y-2 mt-12 relative ;
     }
-    .search-bar{
+
+    .search-bar {
         @apply rounded-md shadow-sm w-full p-4 flex gap-3 bg-white;
     }
-    .dialog-close-button{
+
+    .dialog-close-button {
         @apply z-10 absolute top-2 right-2 bg-no-repeat;
     }
 }
